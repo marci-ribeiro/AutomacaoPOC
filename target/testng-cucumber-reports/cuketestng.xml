@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="1" passed="0" skipped="0" total="1">
+<suite duration-ms="25450" name="cucumber.runtime.formatter.TestNGFormatter">
+<test duration-ms="25450" name="cucumber.runtime.formatter.TestNGFormatter">
+<class name="002 - Acessar site e realizar cadastro">
+<test-method duration-ms="25450" finished-at="2020-06-16T00:12:49Z" name="CT002.001 - realizar cadastro" started-at="2020-06-16T00:12:47Z" status="FAIL">
+<exception class="org.openqa.selenium.ElementClickInterceptedException">
+<message><![CDATA[Dado que eu acesse a url vivara "https://www.vivara.com.br/login"...........passed
+Quando selecionar Novo Cadastro.............................................passed
+E realizar cadastro.........................................................passed
+E preencher dados...........................................................failed
+E seleciono Proximo.........................................................skipped
+E preencho dados de endereço................................................skipped
+E seleciono Proximo.........................................................skipped
+E preencho dados de contato.................................................skipped
+Entao Conclui cadastro com sucesso..........................................skipped
+]]></message>
+<full-stacktrace><![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <md-select id="genderSelect" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" name="inputGender"> is not clickable at point (959,562) because another element <div id="mainLoader" class="loaderBackground"> obscures it
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'MARCI', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14768, moz:profile: C:\Users\marci\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5f8358d3-d19f-4a7d-97a4-0ddb340e7f62
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at br.com.pom.pageObject.CadastroVivara.selecionarGenero(CadastroVivara.java:88)
+	at gherkin.stepdefinition.CadastroVivaraSteps.preencherDados(CadastroVivaraSteps.java:33)
+	at ✽.preencher dados(file:feature/CadastroVivara.feature:14)
+]]></full-stacktrace>
+</exception>
+</test-method>
+</class>
+</test>
+</suite>
+</testng-results>

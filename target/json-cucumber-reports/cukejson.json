@@ -1,0 +1,226 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7889200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.init(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "CT002.001 - realizar cadastro",
+        "description": "",
+        "id": "002---acessar-site-e-realizar-cadastro;ct002.001---realizar-cadastro",
+        "after": [
+          {
+            "result": {
+              "duration": 21300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18508080600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que eu acesse a url vivara \"https://www.vivara.com.br/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.vivara.com.br/login\"",
+                  "offset": 27
+                }
+              ],
+              "location": "CadastroVivaraSteps.queEuAcesseAUrlVivara(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 6023509400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selecionar Novo Cadastro",
+            "match": {
+              "location": "CadastroVivaraSteps.selecionarNovoCadastro()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 332384000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "realizar cadastro",
+            "match": {
+              "location": "CadastroVivaraSteps.realizarCadastro()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: Element \u003cmd-select id\u003d\"genderSelect\" class\u003d\"ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required\" name\u003d\"inputGender\"\u003e is not clickable at point (959,562) because another element \u003cdiv id\u003d\"mainLoader\" class\u003d\"loaderBackground\"\u003e obscures it\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027MARCI\u0027, ip: \u0027192.168.0.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14768, moz:profile: C:\\Users\\marci\\AppData\\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 5f8358d3-d19f-4a7d-97a4-0ddb340e7f62\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat br.com.pom.pageObject.CadastroVivara.selecionarGenero(CadastroVivara.java:88)\r\n\tat gherkin.stepdefinition.CadastroVivaraSteps.preencherDados(CadastroVivaraSteps.java:33)\r\n\tat ✽.preencher dados(file:feature/CadastroVivara.feature:14)\r\n",
+              "duration": 578139000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "preencher dados",
+            "match": {
+              "location": "CadastroVivaraSteps.preencherDados(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CPF",
+                  "NOME",
+                  "SOBRENOME",
+                  "CELULAR",
+                  "DATADENASC"
+                ]
+              },
+              {
+                "cells": [
+                  "73272116087",
+                  "Carla",
+                  "Almeida",
+                  "11964507977",
+                  "25071990"
+                ]
+              }
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 7400,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "seleciono Proximo",
+            "match": {
+              "location": "CadastroVivaraSteps.selecionoProximo()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1700,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "preencho dados de endereço",
+            "match": {
+              "location": "CadastroVivaraSteps.preenchoDadosDeEndereço(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CEP",
+                  "NUMERO",
+                  "COMPLEMENTO"
+                ]
+              },
+              {
+                "cells": [
+                  "70830011",
+                  "1500",
+                  "casa 2"
+                ]
+              }
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1600,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "seleciono Proximo",
+            "match": {
+              "location": "CadastroVivaraSteps.selecionoProximo()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "preencho dados de contato",
+            "match": {
+              "location": "CadastroVivaraSteps.preenchoDadosDeContato(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "EMAIL",
+                  "SENHA",
+                  "CONFIRMARSENHA"
+                ]
+              },
+              {
+                "cells": [
+                  "carlaAlm1@hotmail.com",
+                  "teste2001",
+                  "teste2001"
+                ]
+              }
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "Conclui cadastro com sucesso",
+            "match": {
+              "location": "CadastroVivaraSteps.concluiCadastroComSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cadastro"
+          }
+        ]
+      }
+    ],
+    "name": "002 - Acessar site e realizar cadastro",
+    "description": "  Como usuário necessito realizar cadastro\n  Para realizar login e utilizar o sistema",
+    "id": "002---acessar-site-e-realizar-cadastro",
+    "keyword": "Funcionalidade",
+    "uri": "file:feature/CadastroVivara.feature",
+    "tags": [
+      {
+        "name": "@Cadastro",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

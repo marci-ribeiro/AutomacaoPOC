@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="1437" started-at="2020-03-15T19:55:34Z" finished-at="2020-03-15T19:55:36Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@5abca1e0]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="1437" started-at="2020-03-15T19:55:34Z" finished-at="2020-03-15T19:55:36Z">
+      <class name="runner.Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.Runner@5abca1e0]" name="setUpClass" is-config="true" duration-ms="190" started-at="2020-03-15T19:55:35Z" finished-at="2020-03-15T19:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@5abca1e0]" name="runScenario" duration-ms="220" started-at="2020-03-15T19:55:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-15T19:55:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["CT001 - Acessar site Le Livros e realizar pesquisa de um livro"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acessar site Le Livros e realizar pesquisa"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at br.com.pom.pageObject.Pesquisa.acessaTelaPesquisa(Pesquisa.java:25)
+at gherkin.stepdefinition.PesquisaSteps.queEuAcesseAUrl(PesquisaSteps.java:17)
+at ✽.que eu acesse a url "http://lelivros.love"(file:feature/PesquisaLivros.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.Runner@5abca1e0]" name="tearDownClass" is-config="true" duration-ms="975" started-at="2020-03-15T19:55:35Z" finished-at="2020-03-15T19:55:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.Runner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
